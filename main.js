@@ -31,7 +31,13 @@ function col() {
 }
 function col2() {
     i--
-    // if (i === image) {
-    img.src=image[i]          
-    // }
+    if (i==0) {
+    i=image.length-1   
+    }
+    else if (i<0) {
+    i=image.length-1   
+    }
+    else{
+     img.src=image[i]     
+    }
 }
